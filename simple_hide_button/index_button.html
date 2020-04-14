@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>simple_hide_button</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+<p>hidden a button</p>
+
+<input type="button" onclick="this.hidden=true" value="close_me">
+
+<p>hidden a text</p>
+
+<input type="button" value="hidden under text" id="hidden_under_text">
+<p id="hidden_text">text for close</p>
+
+<script>
+          let button_text = document.getElementById('hidden_under_text');
+          button_text.onclick = function() {
+              document.getElementById('hidden_text').hidden = true
+          }
+</script>
+
+</body>
+</html>
