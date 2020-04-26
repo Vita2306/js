@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>dom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+</head>
+<body>
+
+<h1 id="my">hello Vita</h1>
+<p>how are you?</p>
+<p id="how"></p>
+
+=====================================
+
+<div id="div1">find 1 element by className in div whith Id
+<p class="first">1</p>
+    <p class="first">2</p>
+    <p class="first">3</p>
+    <p class="first">4</p>
+</div>
+
+<p id="show"></p>
+
+======================================
+
+<p>animate</p>
+<style>
+    #relative1{
+        position: relative;
+        width: 500px;
+        height:500px;
+        background-color: #00FF00;
+        border: 3px solid green;
+    }
+    #absolute1{
+        position: absolute;
+        border-radius: 50%;
+        background-color: lightseagreen;
+        border: 1px solid blue;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<p>click=) on ball</p>
+<div id="relative1">
+    <div id="absolute1" onclick="moveBall()"></div>
+</div>
+
+======================================
+<script>
+   document.getElementById('how').innerHTML='all ok!';
+// =========================================================
+   let x = document.getElementsByTagName('div');
+   let y = document.getElementsByClassName('first');
+
+   document.getElementById('show').innerHTML ="First element is" + y[0].innerHTML;
+// ===================================================================================
+
+ function moveBall() {
+     let ball = document.getElementById('absolute1');
+     let boxItem = 0;
+     let id = setInterval(moveBallOpen, 5);
+     function moveBallOpen() {
+         if(boxItem == 450){
+             clearInterval(id);
+         }else{
+             boxItem++;
+             ball.style.top = boxItem + "px";
+             ball.style.left= boxItem + "px";
+         }
+     }
+ }
+</script>
+</body>
+</html>
+
