@@ -1,0 +1,12 @@
+.container{
+    background-color: #00FF00;
+    margin: 5px;
+    padding: 45px;
+}
+img{
+    background-color: yellow;
+    width: 15%;
+}
+img.active{
+    background-color: pink;
+}
