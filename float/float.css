@@ -1,0 +1,19 @@
+.container {
+    background-color: #00FF00;
+    overflow: auto;
+}
+h1 {
+    font-size: 4vh;
+}
+img{
+    width: 20%;
+}
+.image-left {
+    float: left;
+}
+.image-right{
+    float:right;
+}
+.in-class {
+    font-size: 2vh;
+}
