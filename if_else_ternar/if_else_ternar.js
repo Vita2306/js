@@ -58,7 +58,49 @@
 //     message = 'lost?';
 // }
 
-let message = prompt('твоя посада','');
- message == 'Сотрудник'? console.log('Привет'):
-     message == 'Директор'? console.log('Здравствуйте'):
-         message == ''? console.log('Нет логина'): console.log('lost?');
+// let message = prompt('твоя посада','');
+//  message == 'Сотрудник'? console.log('Привет'):
+//      message == 'Директор'? console.log('Здравствуйте'):
+//          message == ''? console.log('Нет логина'): console.log('lost?');
+//================================================================
+
+// Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно.
+// «Включительно» означает, что значение переменной age может быть равно 14 или 90.
+// let age = prompt('enter age','');
+
+// if (14<=age<=90){
+//     console.log(`your age is ${age} ok`);
+// }else{console.log(`${age} no`)}
+
+// if (14<=age && age<=90){
+//     console.log(`your age is ${age} ok`);
+// }else{console.log(`${age} no`)}
+
+// (14<=age && age<=90) ?  console.log(`your age is ${age} ok`) : console.log(`${age} no`)
+//==============================
+
+//Напишите условие if для проверки, что значение переменной age НЕ находится в диапазоне 14 и 90 включительно.
+//Напишите два варианта: первый с использованием оператора НЕ !, второй – без этого оператора.
+//  let age = prompt('enter age','');
+//!(14<age && age<90) ?  console.log(`your age is ${age} `) : console.log(`age from 14 to 90 :${age}`);
+// (14<age<90) ?  console.log(`your age is ${age} `) : console.log(`age from 14 to 90 :${age}`);
+// (14>age || age>90) ?  console.log(`your age is ${age} `) : console.log(`age from 14 to 90 :${age}`);
+
+//===================================
+// Напишите код, который будет спрашивать логин с помощью prompt.
+// Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».
+// Пароль проверять так:
+//Если введён пароль «Я главный», то выводить «Здравствуйте!»,
+// Иначе – «Неверный пароль»,
+// При отмене – «Отменено».
+
+// let question1 = prompt('who are you?','');
+//  if (question1=='admin'){
+//      let question2 = prompt('password','');
+//      if( question2=='1111'){console.log('hello')}
+//      else if (question2 == '' || question2==null) {console.log('не введений пароль')}
+//      else{console.log('wrong password')}
+//  }
+// else if(question1 == null || question1=='') {console.log('не введена персона')}
+// else console.log('wrong person');
+
