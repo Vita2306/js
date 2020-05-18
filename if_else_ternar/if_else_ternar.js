@@ -38,7 +38,6 @@
 
 // let a = prompt('a=','');
 // let b = prompt('b=','');
-//
 // (a + b)<4? console.log('<4'): console.log('>4');
 
 //========================================================
@@ -103,4 +102,50 @@
 //  }
 // else if(question1 == null || question1=='') {console.log('не введена персона')}
 // else console.log('wrong person');
+
+//=====================================
+// Напишите if..else, соответствующий следующему switch:
+
+    // switch (browser) {
+    //     case 'Edge':
+    //         alert( "You've got the Edge!" );
+    //         break;
+    //
+    //     case 'Chrome':
+    //     case 'Firefox':
+    //     case 'Safari':
+    //     case 'Opera':
+    //         alert( 'Okay we support these browsers too' );
+    //         break;
+    //
+    //     default:
+    //         alert( 'We hope that this page looks ok!' );
+    // }
+
+// let brouser = prompt('Enter brouser:','');
+// if( brouser =='Edge' ){console.log( "You've got the Edge!" )}
+// else if(brouser=='Chrome' || brouser=='Firefox'){
+//     console.log( 'Okay we support these browsers too' );
+// }else console.log( 'We hope that this page looks ok!' );
+//==========================================================
+// Перепишите код с использованием одной конструкции switch:
+
+    // let number1 = +prompt('Введите число между 0 и 3', '');
+    // if (number1 === 0) {
+    //     alert('Вы ввели число 0');
+    // }
+    // if (number1 === 1) {
+    //     alert('Вы ввели число 1');
+    // }
+    // if (number1 === 2 || number1 === 3) {
+    //     alert('Вы ввели число 2, а может и 3');
+    // }
+
+// switch (number1) {
+//     case 0:alert('Вы ввели число 0'); break;
+//     case 1: alert('Вы ввели число 1');break;
+//     case 2:
+//     case 3: alert('Вы ввели число 2, а может и 3');break;
+//     default:alert('I dont know');
+// }
 
