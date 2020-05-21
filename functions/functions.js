@@ -84,3 +84,51 @@
 //     let a = +prompt('enter number:','');
 //     let b = +prompt('enter pow:','');
 //     b<0 ? console.log(`0>${b}`) : powNum(a,b);
+
+// arrow function
+let c = (a,b) => a+b;
+console.log(c(1,2));
+
+let fe = (a,b) => {
+    let res = a+b;
+    return res;
+};
+
+console.log(fe(1,2));
+
+// Замените код Function Expression стрелочной функцией:
+
+//     function ask(question, yes, no) {
+//         if (confirm(question)) yes()
+//         else no();
+//     }
+//
+// ask(
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+// );
+
+// let ask = (question, yes, no) =>((confirm(question))? yes(): no());
+//
+// ask(
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+// );
+
+// function pow(x, n) {
+//     let result = 1;
+//     for (let i = 0; i < n; i++) {
+//         result *= x;
+//     }
+//     return result;
+// }
+//
+// let x = prompt("x?", ''), n = prompt("n?", '');
+// if (n <= 0) {
+//     alert(`Степень ${n} не поддерживается, введите целую степень, большую 0`);
+// } else {
+//     alert(pow(x, n))
+// }
+
