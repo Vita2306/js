@@ -1,0 +1,112 @@
+/*#grid{*/
+/*    display: grid;*/
+/*    !*grid-template-rows: 1fr 1fr 1fr;*!*/
+/*    !*скорочений запис*!*/
+/*    !*grid-template-rows: repeat(3,1fr);*!*/
+/*    !*=====================================*!*/
+/*    !*grid-template-columns: 1fr 1fr 1fr;*!*/
+/*    !*скорочений запис*!*/
+/*    !*grid-template-columns: repeat(3,1fr);*!*/
+/*    !*=====================================*!*/
+/*    grid-gap: 2vw;*/
+/*}*/
+/*#grid>div{*/
+/*    font-size:5vw;*/
+/*    padding: .5em;*/
+/*    text-align: center;*/
+/*    background-color: yellow;*/
+/*}*/
+
+/*адаптивність*/
+/*#grid {*/
+/*    display: grid;*/
+/*    !*адаптивність auto-fill*!*/
+/*    !*minmax(150px, 1fr)-мін розмір 150рх стовбця і макс розмір сам рахує через 1fr*!*/
+/*    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));*/
+/*    grid-gap: 2vw;*/
+/*}*/
+/*#grid > div {*/
+/*    font-size: 5vw;*/
+/*    padding: .5em;*/
+/*    background: gold;*/
+/*    text-align: center;*/
+/*}*/
+
+/*адаптивність різниця між auto-fill і auto-fit*/
+/*.grid {*/
+/*    display: grid;*/
+/*    grid-gap: 2vw;*/
+/*    border: 1px solid black;*/
+/*    margin: 10px;*/
+/*}*/
+/*.grid > div {*/
+/*    font-size: 5vw;*/
+/*    padding: .5em;*/
+/*    background: gold;*/
+/*    text-align: center;*/
+/*}*/
+/*auto-fill-В нашем случае, мы используем minmax(150px, 1fr),
+ чтобы указать то,
+ что минимальный размер столбца равен 150px, а максимальный 1fr.*/
+/*.auto-fill {*/
+/*    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));*/
+/*}*/
+/*auto-fit работает практически также, как и auto-fill.
+ Разница тут только в том, что auto-fit
+стягивает все пустые треки в конце размещения,
+в то время как auto-fill нет*/
+/*.auto-fit {*/
+/*    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+/*}*/
+
+/*Гриды с медиа запросами*/
+
+/*body {*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            'header header header'*/
+/*            'nav article ads'*/
+/*            'footer footer footer';*/
+/*    grid-template-rows: 80px 1fr 70px;*/
+/*    grid-template-columns: 20% 1fr 15%;*/
+/*    grid-row-gap: 10px;*/
+/*    grid-column-gap: 10px;*/
+/*    height: 100vh;*/
+/*    margin: 0;*/
+/*}*/
+/*!* Stack the layout on small devices/viewports. *!*/
+/*@media screen and (max-width: 575px) {*/
+/*    body {*/
+/*        grid-template-areas:*/
+/*                'header'*/
+/*                'article'*/
+/*                'ads'*/
+/*                'nav'*/
+/*                'footer';*/
+/*        grid-template-rows: 80px 1fr 70px 1fr 70px;*/
+/*        grid-template-columns: 1fr;*/
+/*    }*/
+/*}*/
+/*header, footer, article, nav, div {*/
+/*    padding: 1.2em;*/
+/*    background: gold;*/
+/*}*/
+/*#pageHeader {*/
+/*    grid-area: header;*/
+/*}*/
+/*#pageFooter {*/
+/*    grid-area: footer;*/
+/*}*/
+/*#mainArticle {*/
+/*    grid-area: article;*/
+/*}*/
+/*#mainNav {*/
+/*    grid-area: nav;*/
+/*}*/
+/*#siteAds {*/
+/*    grid-area: ads;*/
+/*}*/
+
+/*Выставляем размер трека для неявных гридов*/
+
+
