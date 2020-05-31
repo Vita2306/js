@@ -112,3 +112,142 @@
 // }
 // console.log(multiplyNumeric(ner));
 
+// let id = Symbol('id');
+// let obj1 = {
+//     name:'Vita'
+// };
+// obj1[id]='hello';
+// console.log(obj1);
+//
+// let objN ={};
+// for(let key in obj1){
+//     objN[key]= obj1[key];
+// }
+//
+// console.log(objN);
+
+//Создайте объект calculator (калькулятор) с тремя методами:
+
+//read() (читать) запрашивает два значения и сохраняет их как свойства объекта.
+//sum() (суммировать) возвращает сумму сохранённых значений.
+//mul() (умножить) перемножает сохранённые значения и возвращает результат.
+    //let calculator = {
+    // ... ваш код ...
+//};
+//calculator.read();
+//alert( calculator.sum() );
+//alert( calculator.mul() );
+
+//     let objNum ={
+//         read:function () {
+//             this.a = +prompt('enter a:','');
+//             this.b = +prompt('enter b:','');
+//         },
+//         sum:function () {
+//            return this.a + this.b;
+//         },
+//         mul:function () {
+//             return this.a * this.b;
+//         }
+//     };
+//
+// objNum.read();
+// console.log(objNum.sum());
+// console.log(objNum.mul());
+
+// let ladder = {
+//     step: 0,
+//     up() {
+//         this.step++;
+//         return this;
+//     },
+//     down() {
+//         this.step--;
+//         return this;
+//     },
+//     showStep() {
+//         console.log( this.step );
+//         return this;
+//     }
+// }
+//
+// ladder.up().up().down().up().down().showStep();
+
+// var foo = {
+//     toString: function() {
+//         return 'foo';
+//     },
+//     valueOf: function() {
+//         return 2;
+//     }
+// };
+//
+// console.log( foo );
+// console.log( foo );
+// console.log( foo + "3" );
+
+//Создайте функцию-конструктор Calculator, который создаёт объекты с тремя методами:
+
+//read() запрашивает два значения при помощи prompt и сохраняет их значение в свойствах объекта.
+//sum() возвращает сумму введённых свойств.
+//mul() возвращает произведение введённых свойств.
+    //Например:
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert( "Sum=" + calculator.sum() );
+// alert( "Mul=" + calculator.mul() );
+
+// function Calcul()  {
+//
+//         this.read = function() {
+//             this.a = 2;
+//             this.b = 3;
+//         };
+//         this.sum= function () {
+//            return this.a + this.b;
+//         };
+//         this.mul= function () {
+//             return this.a * this.b;
+//         };
+// }
+//
+// let calc = new Calcul();
+// calc.read();
+// console.log(calc.sum());
+// console.log(calc.mul());
+
+// Напишите функцию-конструктор Accumulator(startingValue).
+
+//     Объект, который она создаёт, должен уметь следующее:
+
+//     Хранить «текущее значение» в свойстве value. Начальное значение устанавливается в аргументе конструктора startingValue.
+//     Метод read() использует prompt для получения числа и прибавляет его к свойству value.
+//     Таким образом, свойство value является текущей суммой всего, что ввёл пользователь при вызовах метода read(), с учётом начального значения startingValue.
+
+//     Ниже вы можете посмотреть работу кода:
+
+//     let accumulator = new Accumulator(1); // начальное значение 1
+
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+
+// alert(accumulator.value); // выведет сумму этих значений
+
+// function  Accumulator(startingValue) {
+//
+//         this.value = startingValue;
+//         this.read= function () {
+//             this.value += +prompt('enter number:','');
+//         };
+// }
+//
+// let accumulator = new Accumulator(1);
+// accumulator.read();
+// accumulator.read();
+// accumulator.read();
+// console.log(accumulator.value);
+
+
+
