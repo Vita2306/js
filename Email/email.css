@@ -1,0 +1,22 @@
+html{
+    font-family: sans-serif;
+}
+table {
+    border-collapse: collapse;
+    border:1px solid black;
+    font-size: 14px;
+}
+tr,td,th{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/*tr:nth-child(even) td{*/
+/*    background-color: #c4df9b;*/
+/*}*/
+/*tr:nth-child(odd) td{*/
+/*    background-color:green;*/
+/*}*/
+
+
+
